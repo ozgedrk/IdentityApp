@@ -63,7 +63,6 @@ namespace IdentityApp.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("FullName")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("LockoutEnabled")

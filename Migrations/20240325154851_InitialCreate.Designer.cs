@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IdentityApp.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20240320173932_InitialCreate")]
+    [Migration("20240325154851_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -66,7 +66,6 @@ namespace IdentityApp.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("FullName")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("LockoutEnabled")
